@@ -23,7 +23,7 @@ XCode 9.2
 ## Running the tests
 
 To make testing the take-home challenge easier I added a unitTest file that takes randomly a string and print the result.   
-To make it even easier I implementated a basic UI with a textField that take in input a string a show in a textView the result.
+To make it even easier I implementated a basic UI with a textField that takes in input a string and it shows in a textView the result.
 
 ## Built With
 
