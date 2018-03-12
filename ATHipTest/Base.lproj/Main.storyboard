@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ATMainViewController" customModule="ATHipTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9R6-b0-OA7">
+                                <rect key="frame" x="30" y="60" width="315" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="o3t-eK-I3Y"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8B-4s-f11">
+                                <rect key="frame" x="30" y="185" width="315" height="452"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKL-9M-NrH">
+                                <rect key="frame" x="150" y="125" width="75" height="30"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.030457442939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eam-7Q-hZ1"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Pe7-We-oza">
+                                <rect key="frame" x="167" y="391" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="EI0-XK-q05"/>
+                                    <constraint firstAttribute="height" constant="40" id="ft2-Qf-YLn"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pe7-We-oza" firstAttribute="centerY" secondItem="j8B-4s-f11" secondAttribute="centerY" id="Diq-O7-uAR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j8B-4s-f11" secondAttribute="trailing" constant="30" id="Fgb-4I-BAP"/>
+                            <constraint firstItem="j8B-4s-f11" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JAF-JQ-lrS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9R6-b0-OA7" secondAttribute="trailing" constant="30" id="MPq-ca-MKk"/>
+                            <constraint firstItem="QKL-9M-NrH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="MUW-v1-z8R"/>
+                            <constraint firstItem="j8B-4s-f11" firstAttribute="top" secondItem="QKL-9M-NrH" secondAttribute="bottom" constant="30" id="TYO-Yg-FpK"/>
+                            <constraint firstItem="QKL-9M-NrH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="W1E-en-6aP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QKL-9M-NrH" secondAttribute="trailing" constant="150" id="dx6-4N-yKK"/>
+                            <constraint firstItem="9R6-b0-OA7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fJm-9c-bPc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j8B-4s-f11" secondAttribute="bottom" constant="30" id="h3k-r9-StR"/>
+                            <constraint firstItem="Pe7-We-oza" firstAttribute="centerX" secondItem="j8B-4s-f11" secondAttribute="centerX" id="icp-hR-NdY"/>
+                            <constraint firstItem="QKL-9M-NrH" firstAttribute="top" secondItem="9R6-b0-OA7" secondAttribute="bottom" constant="15" id="ijF-Uw-iDJ"/>
+                            <constraint firstItem="9R6-b0-OA7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="jRP-97-hEe"/>
+                            <constraint firstItem="j8B-4s-f11" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="o6x-N2-47s"/>
+                            <constraint firstItem="9R6-b0-OA7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="th1-87-CQF"/>
+                            <constraint firstItem="QKL-9M-NrH" firstAttribute="centerX" secondItem="9R6-b0-OA7" secondAttribute="centerX" id="xFw-nc-Pa4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityView" destination="Pe7-We-oza" id="B2e-Se-STJ"/>
+                        <outlet property="sendButton" destination="QKL-9M-NrH" id="f6j-Cp-gx7"/>
+                        <outlet property="textField" destination="9R6-b0-OA7" id="rid-jI-gU5"/>
+                        <outlet property="textView" destination="j8B-4s-f11" id="lmP-YH-tqT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="106.59670164917542"/>
+        </scene>
+    </scenes>
+</document>
