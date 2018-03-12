@@ -14,9 +14,9 @@
  (?<=\\@)                 # lookhaed from following char @ this will prevent to add the char to our result
  ((?:[\\w]+)             # regex the word following the @
  
- emoticons: "(?<=\\()(\\S.{1,15}?)(?=\\))"
+ emoticons: "(?<=\\()(\\S{1,15}?\\S)(?=\\))"
  (?<=\\()                # lookhaed of (
- (\\S.{1,15}?)             # emoticon can only be from 1 to max 15 char as per specs and no space between ( and the word
+ (\\S{1,15}?\\S)         # emoticon can only be from 1 to max 15 char as per specs and no space before/after or inside the parenthesis
  (?=\\))                 # lookbehind
  
  titleRegex = "<title\\b[^>]*>(.*?)</title>"

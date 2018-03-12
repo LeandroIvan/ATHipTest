@@ -12,9 +12,9 @@
 import Foundation
 
 class ATContentManager {
-    // regexs
+    // regexs ( explained in ATRegexHelper )
     static let mentionsRegex =      "(?<=\\@)((?:[\\w]+))"
-    static let emoticonsRegex =     "(?<=\\()(\\S.{1,15}?)(?=\\))"
+    static let emoticonsRegex =     "(?<=\\()(\\S{1,15}?\\S)(?=\\))"
     // link detector
     static let urlsLookout =        NSTextCheckingResult.CheckingType.link.rawValue
     
