@@ -6,7 +6,7 @@ Special content to look for includes:
 
 1. @mentions - A way to mention a user. Always starts with an '@' and ends when hitting a non-alphanumeric character.  For example, "Hey @andy, are you free for lunch tomorrow?".
 
-2. Emoticons - For this exercise, you only need to consider 'custom' emoticons which are alphanumeric strings, no longer than 15 characters, contained in parenthesis. You can assume that anything matching this format is an emoticon. (https://www.hipchat.com/emoticons)
+2. Emoticons - For this exercise, you only need to consider 'custom' emoticons which are alphanumeric strings, no longer than 15 characters, contained in parenthesss. You can assume that anything matching this format is an emoticon. (https://www.hipchat.com/emoticons)
 
 3. Links - Any URLs contained in the message, along with the page's title.
 
