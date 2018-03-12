@@ -13,7 +13,8 @@ Special content to look for includes:
 
 ## Getting Started
 
-Build and run, no 3rd party library in use.
+Open the project, build and run. 
+No 3rd party library in use.
 
 ### Prerequisites
 
