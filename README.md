@@ -13,8 +13,8 @@ Special content to look for includes:
 
 ## Getting Started
 
-Open the project, build and run. 
-No 3rd party library in use.
+Open the project, build and run.  
+No 3rd party library in use.  
 
 ### Prerequisites
 
@@ -22,7 +22,7 @@ XCode 9.2
 
 ## Running the tests
 
-To make testing the take-home challenge easier I added a unitTest file that takes randomly a string and print the result.
+To make testing the take-home challenge easier I added a unitTest file that takes randomly a string and print the result.   
 To make it even easier I implementated a basic UI with a textField that take in input a string a show in a textView the result.
 
 ## Built With
