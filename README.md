@@ -32,4 +32,4 @@ To make it even easier I implementated a basic UI with a textField that takes in
 
 ## Authors
 
-* Mady with ❤️ by **Leandro Ivan Candiotto** 
+* Made with ❤️ by **Leandro Ivan Candiotto** 
